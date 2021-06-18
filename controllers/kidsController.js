@@ -1,5 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const Kids = require('../models/kidsModel');
 const Joi = require('joi');
 const { response } = require('express');
