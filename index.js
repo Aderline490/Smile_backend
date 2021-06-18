@@ -12,6 +12,8 @@ const { urlencoded } = require('body-parser');
 
 //Middlewares
 app.use(cors());
+//make the uploads folder publicly accessible
+app.use('/uploads',express.static('uploads'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use('/kids', kidsController);
