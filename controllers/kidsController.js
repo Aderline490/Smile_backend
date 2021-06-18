@@ -1,5 +1,7 @@
-const mongoose = require('mongoose');
 const express = require('express');
+const Kids = require('../models/kidsModel');
+const Joi = require('joi');
+const { response } = require('express');
 const router = express.Router();
 const Joi = require('joi');
 const multer = require('multer');
